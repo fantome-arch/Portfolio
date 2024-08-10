@@ -49,7 +49,7 @@ const Modal = ({ id, close }) => {
         <motion.div  initial={{opacity:0,y:'25%'}} animate={{opacity:1,y:0}} transition={{delay:0.4}} className='dark:text-white  text-lightText text-center p-4'>
           {data?.description?.split('\n').map((line,index)=>{
             return(
-              <span className='text-lg'>
+              <span key={index} className='text-lg'>
                 {line}
                 <br/>
               </span>
