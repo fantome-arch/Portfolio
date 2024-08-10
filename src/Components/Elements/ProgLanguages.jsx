@@ -6,7 +6,7 @@ import StackElement from '../Elements/StackElement'
 import {Languages} from '../../Assets/TechStackData'
 const ResponsiveGridLayout = WidthProvider(Responsive);
 const ProgLanguages = () => {
-const [width,setWidth]=useState(Window.innerWidth)
+const [width,setWidth]=useState(0)
 
 
 useEffect(() => {

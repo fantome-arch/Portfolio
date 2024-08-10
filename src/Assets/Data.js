@@ -4,7 +4,8 @@ export  const  DefaultData=[
         id: 0,
         title: 'Elixer Social Media',
         description: `Elixer is a social media app that allows you to interact with only those who are in your neighborhood anonymously . It takes your location to show you content only from your location within a certain specific radius (max 5km). Providing location is a must for the app to function. The app will not show you content that are uploaded by users from regions beyond your radius. This app has features most social apps do such as DMs, uploading multimedia content comment sections ,likes, dislikes etc. This app is developed for android using react native for the front end and firebase for the backend.
-        Try this app in a virtual android emulator online: https://appetize.io/app/z4kvaencybrnknwkekizo4hcx4
+        Try this app in a virtual android emulator online:\n 
+        https://appetize.io/app/z4kvaencybrnknwkekizo4hcx4 
         `,
         images: ['https://firebasestorage.googleapis.com/v0/b/portfolio-43d28.appspot.com/o/Screenshot_1723310069.png?alt=media&token=3a1e9a6b-7628-41a7-8eda-d5dc52bba1d8',
             "https://e0.pxfuel.com/wallpapers/442/633/desktop-wallpaper-network-concepts-creative-digital-art-futuristic-globe-3d-art-globes-modern-world-technology-for-with-resolution-high-quality.jpg",

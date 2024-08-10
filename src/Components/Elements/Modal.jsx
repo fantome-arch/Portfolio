@@ -29,7 +29,7 @@ const Modal = ({ id, close }) => {
     <motion.div key='backdrop' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={close} transition={{ opacity: { duration: 0.4 } }} className='fixed h-full w-full top-0 left-0 z-[100] backdrop-blur-md overflow-hidden flex justify-center
     items-center'>
       <motion.div key="modal" initial={{ scale: 0 }} animate={{ scale: 1, rotateY: 0 }}
-        exit={{ scale: 0 }} onClick={(e) => { e.stopPropagation() }} className="absolute md:w-[50vw] md:h-[80vh] w-[100vw] h-[100vh]  bg-cardLight
+        exit={{ scale: 0 }} onClick={(e) => { e.stopPropagation() }} className="absolute md:w-[50vw] md:h-[80vh] w-[100vw] h-[100vh]  bg-cardLight max-w-[100vw] 
  dark:bg-lightText rounded-lg shadow-xl overflow-y-auto">
         <div onClick={close} className="h-[14%] w-full p-3 flex items-center justify-end cursor-pointer">
           <motion.div whileHover={{opacity:0.5}} whileTap={{scale:0.8}}>
@@ -46,10 +46,10 @@ const Modal = ({ id, close }) => {
             animate={{ scale: 1, x: 0 }} transition={{ delay: 0.3 }} className='md:text-xl text-lg'>{data?.title}</motion.span>
         </div>
         <Linkify options={{render:renderLink}}>
-        <motion.div  initial={{opacity:0,y:'25%'}} animate={{opacity:1,y:0}} transition={{delay:0.4}} className='dark:text-white  text-lightText text-center p-4'>
+        <motion.div  initial={{opacity:0,y:'25%'}} animate={{opacity:1,y:0}} transition={{delay:0.4}} className='dark:text-white  text-lightText text-center p-4 overflow-x-hidden box break-words'>
           {data?.description?.split('\n').map((line,index)=>{
             return(
-              <span key={index} className='text-lg'>
+              <span key={index} className='text-lg flex-wrap text-wrap p-2'>
                 {line}
                 <br/>
               </span>
