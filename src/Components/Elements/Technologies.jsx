@@ -27,7 +27,7 @@ const variants = {
     }
 }
 const Technologies = () => {
-    const [width, setWidth] = useState(Window.innerWidth)
+    const [width, setWidth] = useState(0)
     const ref1 = useRef(null)
     const ref2 = useRef(null)
     const inView = useInView(ref1)
