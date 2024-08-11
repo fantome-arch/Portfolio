@@ -52,8 +52,8 @@ export  const  DefaultData=[
         id: 3,
         title: 'AI Telegram Bot',
         description: `This is an Ai telegram bot named GigaChad. It's responsibility is to provide helpful advice to users while being extremely straightforward and critical. It also has the ability to generate images. The AI can distinguish between a general prompt and a prompt that is for generating images.
-        This was created using nodejs and telegram API. For the text generation I used a freely hosted text generation model called mixtral 8x21b from hugging face and for the image generation I used a similar free api for black-forest-labs/flux-schnell model provided by replicate.\n
-        For the source code here is the github link: https://github.com/fantome-arch/AiTelegramBot.git \n and you can access the bot on telegram via this link: https://t.me/GigaChad69Bot \n Please note that the Image generation feature may not work propely as I am using a free model's api rather than using something far more sophisticated` ,
+        This was created using nodejs and telegram API. For the text generation I used a freely hosted text generation model called mixtral 8x21b from hugging face and for the image generation I used a similar free api from hugging face for text to image feature. The model used is called stable diffusion.\n
+        For the source code here is the github link: https://github.com/fantome-arch/AiTelegramBot.git \n and you can access the bot on telegram via this link: https://t.me/GigaChad69Bot \n  ` ,
         images: ['https://static.vecteezy.com/system/resources/previews/033/161/296/large_2x/side-view-of-a-female-cyborg-and-a-female-robot-in-space-the-interface-of-war-a-tense-confrontation-unfolds-between-a-masked-human-and-a-powerful-ai-robot-symbolizing-the-battle-ai-generated-free-photo.jpg',
 
             'https://firebasestorage.googleapis.com/v0/b/portfolio-43d28.appspot.com/o/robo.png?alt=media&token=8c8d14c2-0faf-443b-b3b8-a269450cf1e6',

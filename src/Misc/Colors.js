@@ -6,7 +6,7 @@ export const Theme={
     darkBackground:'#130224',
     border:'rgba(61, 50, 74,0.5)',
     navmob2:'rgba(255, 255, 255,0.8)',
-    navmob:'rgba(48, 0, 71,0.8)',
+    navmob:'rgba(48, 0, 71,0.5)',
     navbarDark:'rgba(19, 2, 36,0.9)',
     backdrop:'rgba(0, 0, 0,0.8)',
     cardHover:'rgba(0, 0, 0,0.5)',

@@ -40,6 +40,7 @@ const Technologies = () => {
 
         window.addEventListener('resize', handleResize);
 
+        handleResize()
         // Cleanup the event listener on component unmount
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -65,7 +66,7 @@ const Technologies = () => {
 
             <div  ref={ref1} className='relative w-[80vw] p-4 bg-techLight  dark:bg-lightText rounded-lg shadow-lg  gap-3'>
                 <span className='text-lg text-lightText dark:text-white pl-2 font-bold border-l-8 border-l-lightText dark:border-l-white'>Languages</span>
-                <ResponsiveGridLayout allowOverlap={false} rowHeight={100} cols={{ lg: 3, md: 2 }} autoSize isDraggable={false}
+                <ResponsiveGridLayout allowOverlap={false} rowHeight={100} cols={{ lg: 3, md: 2 }}  isDraggable={false}
                     breakpoints={{ lg: 900, md: 768 }}
                 >
                     {Languages.map((item, index) => {
@@ -85,7 +86,7 @@ const Technologies = () => {
             </div>
             <div ref={ref2} className=' relative w-[80vw] p-4 bg-techLight  dark:bg-lightText rounded-lg shadow-lg  gap-3'>
                 <span className='text-lg text-lightText dark:text-white pl-2 font-bold border-l-8 border-l-lightText dark:border-l-white'>Technologies</span>
-                <ResponsiveGridLayout allowOverlap={false} rowHeight={100} cols={{ lg: 3, md: 2 }} autoSize isDraggable={false}
+                <ResponsiveGridLayout allowOverlap={false} rowHeight={100} cols={{ lg: 3, md: 2 }}  isDraggable={false}
                     breakpoints={{ lg: 900, md: 768 }}
                 >
                     {TechData.map((item, index) => {

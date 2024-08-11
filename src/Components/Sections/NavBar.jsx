@@ -89,17 +89,15 @@ const NavBar = () => {
       <nav id="navboss" className='md:flex justify-between items-center hidden w-[50vw] '>
 
         <div id="homebtn" onClick={() => { handleClickTosec('home') }} className={`flex flex-col gap-1  cursor-pointer border-b-4 border-b-transparent
-         ${selection!=='home'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
+         ${selection.title!=='home'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
           <span className={`gap-1 ${selection.title === 'home' ? 'text-lightText dark:text-white' : 'text-unselectlight dark:text-unselectdark'} font-bold text-lg  flex items-center justify-center`} >
             <IoHome />
             Home
           </span>
-        
-
-
         </div>
+        
         <div id="aboutbtn" onClick={() => { handleClickTosec('about') }} className={`flex flex-col gap-1  cursor-pointer border-b-4 border-b-transparent
-         ${selection!=='about'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
+         ${selection.title!=='about'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
           <span className={`gap-1 ${selection.title === 'about' ? 'text-lightText dark:text-white' : 'text-unselectlight dark:text-unselectdark'} font-bold text-lg  flex items-center justify-center`}>
             <FaUserGraduate />
             About
@@ -109,7 +107,7 @@ const NavBar = () => {
 
         </div>
         <div id="projectsbtn" onClick={() => { handleClickTosec('projects', 'projectsbtn') }} className={`flex flex-col gap-1  cursor-pointer border-b-4 border-b-transparent
-         ${selection!=='projects'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
+         ${selection.title!=='projects'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
           <span className={`gap-1 ${selection.title === 'projects' ? 'text-lightText dark:text-white' : 'text-unselectlight dark:text-unselectdark'} font-bold text-lg  flex items-center justify-center`}>
             <IoBriefcase />
             Projects
@@ -119,7 +117,7 @@ const NavBar = () => {
 
         </div>
         <div id="techbtn" onClick={() => { handleClickTosec('tech') }} className={`flex flex-col gap-1  cursor-pointer border-b-4 border-b-transparent
-         ${selection!=='tech'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
+         ${selection.title!=='tech'?'hover:border-b-unselectlight dark:hover:border-b-unselectdark hover:border-b-4  ':''}`}>
           <span className={`gap-1 ${selection.title === 'tech' ? 'text-lightText dark:text-white' : 'text-unselectlight dark:text-unselectdark'} font-bold text-lg  flex items-center justify-center`}>
             <GrSystem />
             Tech

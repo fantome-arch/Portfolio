@@ -22,7 +22,7 @@ const ThemeSwitch = () => {
             }}
             whileTap={{scale:0}}
             className='flex justify-center align-middle  cursor-pointer'>
-                <FaMoon  className='text-lightText  md:w-5 md:h-5 w-3 h-3' />
+                <FaMoon  className='text-lightText  text-3xl ' />
 
             </motion.div>
         )
@@ -36,7 +36,7 @@ const ThemeSwitch = () => {
             whileTap={{scale:0}}
             
             className='flex justify-center align-middle cursor-pointer'>
-                <LuSun  className='text-white md:w-5 md:h-5 w-3 h-3 '/>
+                <LuSun  className='text-white text-3xl '/>
 
             </motion.div>
         )

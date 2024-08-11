@@ -50,16 +50,16 @@ const ThreeDot = () => {
     <div className='p-2 flex justify-center align-middle   md:hidden'>
       <div onClick={() => { setShown(!shown) }}>
         {shown?<IoMdClose 
-        className='text-lightText dark:text-white cursor-pointer md:w-5 md:h-5 w-3 h-3 text-xl' />:
-        <RxHamburgerMenu className='text-lightText dark:text-white cursor-pointer md:w-5 md:h-5 w-3 h-3 text-xl' />}
+        className='text-lightText dark:text-white cursor-pointer text-3xl ' />:
+        <RxHamburgerMenu className='text-lightText dark:text-white cursor-pointer  text-3xl' />}
         
 
       </div>
       <AnimatePresence>
       {shown && (
         <motion.div initial={{x:-100}} animate={{x:0}} exit={{x:-100}} key="nav" 
-        className="rounded-lg fixed backdrop-blur-xl bg-navmob2 dark:bg-navmob left-0 w-[100px] top-[10vh] shadow-md  z-[25] h-[88vh]">
-
+        className="rounded-lg backdrop-blur-lg fixed left-0 w-[100px] top-[10vh]   z-[25] h-[88vh]">
+       
 
 
           <div className='absolute z-30 flex flex-col justify-center gap-20 items-center h-full w-full'>

@@ -9,7 +9,7 @@ export const Top = () => {
 
 
   return (
-    <section className='fixed top-0  w-screen h-[10vh] z-20 shadow-lg bg-white dark:bg-transparent backdrop-blur-lg rounded-md'>
+    <section className='fixed top-0  w-screen h-[10vh] z-20 shadow-lg dark:shadow-none bg-white dark:bg-darkbg  rounded-md'>
       
       <div className='absolute z-30 w-full h-full p-7 flex justify-between  items-center '>
         <ThreeDot />
