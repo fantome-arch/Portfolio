@@ -48,17 +48,17 @@ const ThreeDot = () => {
   }, []);
   return (
     <div className='p-2 flex justify-center align-middle   md:hidden'>
-      <div onClick={() => { setShown(!shown) }}>
+      <motion.div initial={{opacity:1}} whileHover={{opacity:0.5}} whileTap={{scale:0.8}} onClick={() => { setShown(!shown) }}>
         {shown?<IoMdClose 
         className='text-lightText dark:text-white cursor-pointer text-3xl ' />:
         <RxHamburgerMenu className='text-lightText dark:text-white cursor-pointer  text-3xl' />}
         
 
-      </div>
+      </motion.div>
       <AnimatePresence>
       {shown && (
         <motion.div initial={{x:-100}} animate={{x:0}} exit={{x:-100}} key="nav" 
-        className="rounded-lg backdrop-blur-lg fixed left-0 w-[100px] top-[10vh]   z-[25] h-[88vh]">
+        className="rounded-lg backdrop-blur-lg fixed left-0 w-[120px] top-[100px]   z-[25] h-[88vh]">
        
 
 
